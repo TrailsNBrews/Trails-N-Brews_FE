@@ -1,0 +1,22 @@
+require 'rails_helper'
+
+RSpec.describe 'Welcome page' do
+  it 'displays a welcome page' do
+    visit root_path
+    expect(current_path).to eq(root_path)
+
+    expect(page).to have_content("Trails N' Brews")
+    expect(page).to have_button('New User')
+    expect(page).to have_button('Log In')
+  end
+
+  it 'takes us to the Create New User page' do
+    visit root_path
+
+    click_button 'New User'
+
+    expect(current_path).to eq(new_user_path)
+
+    save_and_open_page
+  end
+end
