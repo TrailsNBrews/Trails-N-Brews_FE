@@ -27,4 +27,14 @@ RSpec.describe 'User show' do
 
     expect(current_path).to eq(breweries_path)
   end
+
+  it 'has a button that takes me to the users accomplishments page' do
+    visit user_path
+
+    expect(page).to have_button("Accomplishments")
+
+    click_on "Accomplishments"
+
+    expect(current_path).to eq(accomplishments_user_path)
+  end
 end
