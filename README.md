@@ -211,9 +211,22 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+## Developers
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+1. Brandon Gray, [Github: bGray88](https://github.com/bGray88)
+2. Christian McCabe, [Github: cemccabe](https://github.com/cemccabe)
+3. Kyle Ledin, [Github: Kledin85](https://github.com/Kledin85)
+4. Leo Banos Garcia, [Github: banosl](https://github.com/banosl)
+5. Max MacGillivray, [Github: MoxieMax](https://github.com/MoxieMax)
+6. Sergio Azcona, [Github: Sergio-Azcona](https://github.com/Sergio-Azcona)
+
+Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
+
+## Project Managers/Instructors
+
+1. Meg Stang
+2. Mike Dao
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,13 +238,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [The Best README template by Github User othneil](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
