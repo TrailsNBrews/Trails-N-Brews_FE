@@ -36,19 +36,19 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Trails N Brews</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A guide to lead hikers to "watering holes"
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues">Request Feature</a>
   </p>
 </div>
 
@@ -127,9 +127,6 @@ This repository holds the front end code for TnB, the backend repo is located [h
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 * Ruby 2.7.4
@@ -137,9 +134,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below are instructions for forking and cloning this repo_
 
 1. Clone the repo
+
+<!-- add clone gif http://www.giphy.com/gifs/MGGuPEeUJu6qVeIMv5 -->
    ```sh
    git clone git@github.com:TrailsNBrews/Trails-N-Brews_FE.git
    ```
@@ -195,6 +194,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
+  <!-- fork gif http://www.giphy.com/gifs/Q0m5xgakobdn2Sot01 -->
 2. Create your Feature Branch 
   `git checkout -b feature/AmazingFeatureName`
 3. Commit your Changes 
@@ -202,6 +202,8 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch 
   `git push origin feature/AmazingFeatureName`
 5. Open a Pull Request
+
+<!-- PR gif http://www.giphy.com/gifs/CACCdm76hZKBdaaz2Y -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
