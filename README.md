@@ -87,7 +87,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Trails N' Brews (TnB) is a web app seeking to answer one of life's greatest needs for the Colorado hiker. Whether it be a 1 mile trail along the front range or an expedition to the summit of one this great state's many 14ers all hikers want to know where the nearest brewery is to celebrate and wind down from their achievement. TnB is designed with service oriented architecture.
+
+This repository holds the front end code for TnB, the backend repo is located [here](https://github.com/TrailsNBrews/trails_n_brews_BE)
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -104,16 +106,9 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [![Rails]][Rails-url]
+<!-- Others will be added as needed -->
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,19 +132,22 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone git@github.com:TrailsNBrews/Trails-N-Brews_FE.git
    ```
-3. Install NPM packages
+2. Install gems
    ```sh
-   npm install
+   bundle install
    ```
-4. Enter your API in `config.js`
+3. Setup db
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   rails db:{create,migrate}
    ```
+4. Run RSpec tests
+    ```sh
+    bundle exec rspec
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
