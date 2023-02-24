@@ -5,5 +5,7 @@
 <% end %>
 
 <% if params[:name] %>
-  <%= params[:name] %>
+  <% @breweries.each do |brewery| %>
+    <p><%= brewery.name %></p>
+  <% end %>
 <% end %>
