@@ -92,14 +92,6 @@ Trails N' Brews (TnB) is a web app seeking to answer one of life's greatest need
 
 This repository holds the front end code for TnB, the backend repo is located [here](https://github.com/TrailsNBrews/trails_n_brews_BE)
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,9 +195,12 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeatureName`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeatureName'`)
-4. Push to the Branch (`git push origin feature/AmazingFeatureName`)
+2. Create your Feature Branch 
+  `git checkout -b feature/AmazingFeatureName`
+3. Commit your Changes 
+  `git commit -m 'Add some AmazingFeatureName'`
+4. Push to the Branch 
+  `git push origin feature/AmazingFeatureName`
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -226,12 +221,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Developers
 
-1. Brandon Gray, [Github: bGray88](https://github.com/bGray88)
-2. Christian McCabe, [Github: cemccabe](https://github.com/cemccabe)
-3. Kyle Ledin, [Github: Kledin85](https://github.com/Kledin85)
-4. Leo Banos Garcia, [Github: banosl](https://github.com/banosl)
-5. Max MacGillivray, [Github: MoxieMax](https://github.com/MoxieMax)
-6. Sergio Azcona, [Github: Sergio-Azcona](https://github.com/Sergio-Azcona)
+1. [Brandon Gray](https://github.com/bGray88)
+2. [Christian McCabe](https://github.com/cemccabe)
+3. [Kyle Ledin](https://github.com/Kledin85)
+4. [Leo Banos Garcia](https://github.com/banosl)
+5. [Max MacGillivray](https://github.com/MoxieMax)
+6. [Sergio Azcona](https://github.com/Sergio-Azcona)
 
 Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
 
@@ -251,7 +246,7 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [The Best README template by Github User othneil](https://github.com/othneildrew/Best-README-Template)
+* ["The Best README Template" by Github User othneil](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
