@@ -62,6 +62,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#learning-goals">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -114,6 +115,16 @@ Use the `BLANK_README.md` to get started.
 
 
 
+### Learning Goals
+
+* [![Rails]][Rails-url]
+<!-- Others will be added as needed -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -122,11 +133,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Ruby 2.7.4
+* Rails 5.2.8
 
 ### Installation
 
@@ -140,7 +148,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    bundle install
    ```
-3. Setup db
+3. Setup the database
    ```js
    rails db:{create,migrate}
    ```
@@ -154,7 +162,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Examples 
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -167,13 +175,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
+- [ ] Add Changelog
 - [x] Add back to top links
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -190,9 +196,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeatureName`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeatureName'`)
+4. Push to the Branch (`git push origin feature/AmazingFeatureName`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -200,11 +206,11 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
