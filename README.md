@@ -245,8 +245,6 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Choose an Open Source License](https://choosealicense.com)
 * ["The Best README Template" by Github User othneil](https://github.com/othneildrew/Best-README-Template)
 
