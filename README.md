@@ -230,7 +230,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 5. [Max MacGillivray](https://github.com/MoxieMax)
 6. [Sergio Azcona](https://github.com/Sergio-Azcona)
 
-Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
+[Organization Repository Link](https://github.com/orgs/TrailsNBrews/repositories)
+[Backend Link](https://github.com/TrailsNBrews/trails_n_brews_BE)
 
 ## Project Managers/Instructors
 
