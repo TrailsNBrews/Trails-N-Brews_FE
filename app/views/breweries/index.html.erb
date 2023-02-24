@@ -1,0 +1,9 @@
+<%# <% binding.pry%> %>
+<%= form_with url: breweries_path, method: :get, local: true do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit "Find Brewery" %>
+<% end %>
+
+<% if params[:name] %>
+  <%= params[:name] %>
+<% end %>
