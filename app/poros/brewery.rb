@@ -1,6 +1,7 @@
 class Brewery
 
-  attr_reader :name,
+  attr_reader :id,
+              :name,
               :street,
               :city,
               :state,
@@ -10,6 +11,7 @@ class Brewery
               :phone
 
   def initialize(data)
+    @id = data[:id]
     @name = data[:name]
     @street = data[:street]
     @city = data[:city]

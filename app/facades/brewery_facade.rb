@@ -6,6 +6,10 @@ class BreweryFacade
     end
   end
 
+  def self.show_brewery(uri)
+    @brewery = Brewery.new(filter_breweries(uri))
+  end
+
   def self.filter_breweries(uri)
     BreweryService.parse_response(uri)
   end

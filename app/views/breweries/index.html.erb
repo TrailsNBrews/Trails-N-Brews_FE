@@ -6,6 +6,6 @@
 
 <% if params[:name] %>
   <% @breweries.each do |brewery| %>
-    <p><%= brewery.name %></p>
+    <p><%=link_to brewery.name, brewery_path(brewery.id) %></p>
   <% end %>
 <% end %>

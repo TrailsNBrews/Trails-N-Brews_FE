@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   end
 
   resources :trails, only: [:index]
-  resources :breweries, only: [:index]
+  resources :breweries, only: [:index, :show]
 
 end
