@@ -62,7 +62,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#learning-goals">Built With</a></li>
+        <li><a href="#learning-goals">Learning Goals</a></li>
       </ul>
     </li>
     <li>
@@ -116,8 +116,22 @@ Use the `BLANK_README.md` to get started.
 
 
 ### Learning Goals
+* Efficient API consumption
+* Improve individual and group communication skills
+* Learn about microservices
+* Learn about service integration and implementation
+<!-- * KL - Consuming APIs, get better at team communication skills,  
+Christian - Learn more about SOA and microservices, learn about implementing other services into our app – make a solid project to put on a resume
+Leo - Learn more about project management, agile workflows, communication between different teams on a project.
+Max - 
+Get more comfortable with consuming APIs
+Ask for help when I need it and not wait until I can’t push it off anymore
+Passwords and authentication
+Brandon Gray: Project management format process, and how to make lots of money
+SA: aside from the “how to capitalize” questions Brandon posed… practice the concepts we’ve learned thus far and implement new ones to challenge ourselves
+ Have the room to struggle through a problem while balancing the fact that this is a time sensitive project, so i will need to ask for help earlier than i am sometimes comfortable with doing
+This speaks to work management, i suppose   -->
 
-* [![Rails]][Rails-url]
 <!-- Others will be added as needed -->
 
 
