@@ -10,4 +10,5 @@ class BreweriesController < ApplicationController
         @brewery = BreweryFacade.show_brewery("/breweries/#{params[:id]}")
     end
     
+    
 end
