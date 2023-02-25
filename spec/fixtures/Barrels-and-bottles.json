@@ -1,0 +1,19 @@
+{
+  "id": "barrels-and-bottles-brewery-golden",
+  "name": "Barrels & Bottles Brewery",
+  "brewery_type": "brewpub",
+  "street": "600 12th St Ste 160",
+  "address_2": null,
+  "address_3": null,
+  "city": "Golden",
+  "state": "Colorado",
+  "county_province": null,
+  "postal_code": "80401-6145",
+  "country": "United States",
+  "longitude": "-105.2202098",
+  "latitude": "39.7562107",
+  "phone": "7203283643",
+  "website_url": "http://www.barrelsbottles.com",
+  "updated_at": "2023-02-21T01:41:59.300Z",
+  "created_at": "2023-02-21T01:41:59.300Z"
+}
