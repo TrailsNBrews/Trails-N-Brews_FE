@@ -6,7 +6,7 @@
       <h3>City: <%= "#{@brewery.city}, #{@brewery.state}" %></h3>
       <h3>Phone: <%= @brewery.phone %></h3>
       <h3><%= "Website: #{@brewery.website}" if @brewery.website  %></h3>
-      <iframe src="https://www.google.com/maps/embed/v1/q?key=#{ENV[GOOGLE_API_KEY]}&center=#{@brewery.latitude},#{@brewery.longitude}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed/v1/q?key=#{ENV['GOOGLE_API_KEY']}&center=#{@brewery.latitude},#{@brewery.longitude}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <%# <iframe
         width="450"
         height="250"
