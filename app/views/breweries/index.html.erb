@@ -1,11 +1,16 @@
-<%# <% binding.pry%> %>
-<%= form_with url: breweries_path, method: :get, local: true do |form| %>
-  <%= form.text_field :name %>
-  <%= form.submit "Find Brewery" %>
-<% end %>
+<div class='container'>
+  <div class='text-center'>
+    <div class='page-header'>
+      <%= form_with url: breweries_path, method: :get, local: true do |form| %>
+        <%= form.text_field :name %>
+        <%= form.submit "Find Brewery" %>
+      <% end %>
 
-<% if params[:name] %>
-  <% @breweries.each do |brewery| %>
-    <p><%=link_to brewery.name, brewery_path(brewery.id) %></p>
-  <% end %>
-<% end %>
+      <% if params[:name] %>
+        <% @breweries.each do |brewery| %>
+          <p><%=link_to brewery.name, brewery_path(brewery.id) %></p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

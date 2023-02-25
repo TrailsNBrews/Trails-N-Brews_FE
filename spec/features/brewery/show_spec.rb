@@ -8,7 +8,7 @@ RSpec.describe 'Brewery show page' do
       .to_return(status: 200, body: json_response)
 
     visit brewery_path("10-barrel-brewing-co-denver-denver")
-    save_and_open_page
+    
     expect(page).to have_content("10 Barrel Brewing Co - Denver")
     expect(page).to have_content("2620 Walnut St")
     expect(page).to have_content("Denver")
