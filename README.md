@@ -114,8 +114,8 @@ This repository holds the front end code for TnB, the backend repo is located [h
 * Improve individual and group communication skills
 * Microservice integration and implementation
 * Service integration and implementation
-* OAuth utilization
-* Efficient API consumption
+* Implementation of Bootstrap for improved FE appearance
+* Functional Google map embedding
 
 <!-- Others can be added as needed -->
 
