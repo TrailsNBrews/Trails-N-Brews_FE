@@ -18,13 +18,16 @@ RSpec.describe "brewery index" do
   end
 
   it 'can take me to a brewery show page' do 
-    visit breweries_path
-
     json_response = File.read('spec/fixtures/colorado_breweries.json')
     stub_request(:get, "https://api.openbrewerydb.org/breweries?by_name=Barrel&per_page=3")
       .to_return(status: 200, body: json_response)
+      
+      visit breweries_path
 
-
+    json_response = File.read('spec/fixtures/10-barrel-brewing-company.json')
+    stub_request(:get, "https://api.openbrewerydb.org/breweries/10-barrel-brewing-co-denver-denver")
+      .to_return(status: 200, body: json_response)
+      
     fill_in(:name, with: "Barrel")
     click_button 'Find Brewery'
 
