@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     # resources :accomplishments, only: :index, controller: 'users'
   end
 
-  resources :trails, only: [:index]
+  resources :trails, only: [:index, :show]
   resources :breweries, only: [:index, :show]
 
 end
