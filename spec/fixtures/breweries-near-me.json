@@ -1,0 +1,95 @@
+{
+  "data": [
+      {
+          "type": "micro",
+          "id": "new-terrain-brewing-company-golden",
+          "attributes": {
+              "name": "New Terrain Brewing Company",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80403-1863",
+              "longitude": "-105.1851036",
+              "latitude": "39.77781975",
+              "website_url": "http://newterrainbrewing.com"
+          }
+      },
+      {
+          "type": "large",
+          "id": "millercoors-brewing-co-golden-golden",
+          "attributes": {
+              "name": "MillerCoors Brewing Co - Golden",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-5811",
+              "longitude": "-105.219592",
+              "latitude": "39.759495",
+              "website_url": null
+          }
+      },
+      {
+          "type": "micro",
+          "id": "mountain-toad-brewing-golden",
+          "attributes": {
+              "name": "Mountain Toad Brewing",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-1047",
+              "longitude": "-105.2242563",
+              "latitude": "39.75807905",
+              "website_url": "http://mountaintoadbrewing.com"
+          }
+      },
+      {
+          "type": "brewpub",
+          "id": "barrels-and-bottles-brewery-golden",
+          "attributes": {
+              "name": "Barrels & Bottles Brewery",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-6145",
+              "longitude": "-105.2202098",
+              "latitude": "39.7562107",
+              "website_url": "http://www.barrelsbottles.com"
+          }
+      },
+      {
+          "type": "brewpub",
+          "id": "golden-city-brewery-golden",
+          "attributes": {
+              "name": "Golden City Brewery",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-1181",
+              "longitude": "-105.2227813",
+              "latitude": "39.75471167",
+              "website_url": null
+          }
+      },
+      {
+          "type": "contract",
+          "id": "sherpa-brewery-pvt-ltd-golden",
+          "attributes": {
+              "name": "Sherpa Brewery Pvt. Ltd.",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-2507",
+              "longitude": "-105.1963424",
+              "latitude": "39.7443713",
+              "website_url": null
+          }
+      },
+      {
+          "type": "brewpub",
+          "id": "colorado-plus-wheat-ridge",
+          "attributes": {
+              "name": "Colorado Plus",
+              "city": "Wheat Ridge",
+              "state": "Colorado",
+              "postal_code": "80033-4965",
+              "longitude": "-105.0916384",
+              "latitude": "39.7693524",
+              "website_url": "http://coloradoplus.net"
+          }
+      }
+  ]
+}

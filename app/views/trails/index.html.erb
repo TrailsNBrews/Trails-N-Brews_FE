@@ -1,0 +1,16 @@
+<div class='container'>
+  <div class='text-center'>
+    <div class='page-header'>
+      <%= form_with url: trails_path, method: :get, local: true do |form| %>
+        <%= form.text_field :name %>
+        <%= form.submit "Find Trails" %>
+      <% end %>
+
+      <% if params[:name] %>
+        <% @trails.each do |trail| %>
+          <p><%=link_to trail.name, trail_path(trail.id) %></p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
