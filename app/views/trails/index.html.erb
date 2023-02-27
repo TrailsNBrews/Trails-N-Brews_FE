@@ -7,8 +7,8 @@
       <% end %>
 
       <% if params[:name] %>
-        <% @breweries.each do |brewery| %>
-          <p><%=link_to brewery.name, brewery_path(brewery.id) %></p>
+        <% @trails.each do |trail| %>
+          <p><%=link_to trail.name, trail_path(trail.id) %></p>
         <% end %>
       <% end %>
     </div>
