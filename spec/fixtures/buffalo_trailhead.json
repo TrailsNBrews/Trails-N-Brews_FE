@@ -1,0 +1,13 @@
+{
+  "data": [
+      {
+          "id": "62818",
+          "type": "Trailhead",
+          "attributes": {
+              "name": "Buffalo (Colorado Trail) Trailhead",
+              "coordinates": "471072.87320000026, 4354796.7403",
+              "bathrooms": "yes"
+          }
+      }
+  ]
+}

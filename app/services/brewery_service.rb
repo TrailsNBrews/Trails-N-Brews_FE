@@ -1,6 +1,6 @@
 class BreweryService
   def self.connection
-    Faraday.new(url: 'https://api.openbrewerydb.org' )
+    Faraday.new(url: 'https://evening-caverns-30828.herokuapp.com' )
   end
 
   def self.parse_response(uri)

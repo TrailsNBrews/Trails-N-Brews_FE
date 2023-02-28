@@ -1,0 +1,17 @@
+{
+  "data": [
+      {
+          "type": "brewpub",
+          "id": "barrels-and-bottles-brewery-golden",
+          "attributes": {
+              "name": "Barrels & Bottles Brewery",
+              "city": "Golden",
+              "state": "Colorado",
+              "postal_code": "80401-6145",
+              "longitude": "-105.2202098",
+              "latitude": "39.7562107",
+              "website_url": "http://www.barrelsbottles.com"
+          }
+      }
+  ]
+}
