@@ -8,7 +8,7 @@ class Brewery
               :postal_code,
               :longitude,
               :latitude,
-              # :phone,
+              :phone,
               :website
 
   def initialize(data)
@@ -21,7 +21,7 @@ class Brewery
     @postal_code = data[:attributes][:postal_code]
     @longitude = data[:attributes][:longitude]
     @latitude = data[:attributes][:latitude]
-    # @phone = data[:attributes][:phone]
+    @phone = data[:attributes][:phone]
     @website = data[:attributes][:website_url]
   end
   

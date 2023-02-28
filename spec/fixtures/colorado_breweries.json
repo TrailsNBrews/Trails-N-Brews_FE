@@ -5,9 +5,11 @@
             "id": "10-barrel-brewing-co-denver-denver",
             "attributes": {
                 "name": "10 Barrel Brewing Co - Denver",
+                "address": null,
                 "city": "Denver",
                 "state": "Colorado",
                 "postal_code": "80205-2231",
+                "phone": "7205738992",
                 "longitude": "-104.9853655",
                 "latitude": "39.7592508",
                 "website_url": null
@@ -18,9 +20,11 @@
             "id": "barrel-dog-brewing-evergreen",
             "attributes": {
                 "name": "Barrel Dog Brewing",
+                "address": null,
                 "city": "Evergreen",
                 "state": "Colorado",
                 "postal_code": "80439",
+                "phone": "5599176846",
                 "longitude": "-105.321458",
                 "latitude": "39.6361637",
                 "website_url": null
@@ -31,9 +35,11 @@
             "id": "barrels-and-bottles-brewery-golden",
             "attributes": {
                 "name": "Barrels & Bottles Brewery",
+                "address": null,
                 "city": "Golden",
                 "state": "Colorado",
                 "postal_code": "80401-6145",
+                "phone": "7203283643",
                 "longitude": "-105.2202098",
                 "latitude": "39.7562107",
                 "website_url": "http://www.barrelsbottles.com"
@@ -44,9 +50,11 @@
             "id": "echo-brewing-cask-and-barrel-erie",
             "attributes": {
                 "name": "Echo Brewing Cask and Barrel",
+                "address": null,
                 "city": "Erie",
                 "state": "Colorado",
                 "postal_code": "80516-0794",
+                "phone": "7203612332",
                 "longitude": "-105.0477679",
                 "latitude": "40.05042825",
                 "website_url": null
@@ -57,9 +65,11 @@
             "id": "great-divide-brewing-co-rino-barrel-bar-denver",
             "attributes": {
                 "name": "Great Divide Brewing Co - RiNo Barrel Bar",
+                "address": null,
                 "city": "Denver",
                 "state": "Colorado",
                 "postal_code": "80216-3665",
+                "phone": "3032969460",
                 "longitude": "-104.979247",
                 "latitude": "39.7703322",
                 "website_url": "http://greatdivide.com/"
@@ -70,9 +80,11 @@
             "id": "gunbarrel-brewing-company-boulder",
             "attributes": {
                 "name": "Gunbarrel Brewing Company",
+                "address": null,
                 "city": "Boulder",
                 "state": "Colorado",
                 "postal_code": "80301-3761",
+                "phone": "8008035732",
                 "longitude": null,
                 "latitude": null,
                 "website_url": "http://www.gunbarrelbrewing.com"
@@ -83,9 +95,11 @@
             "id": "jessup-farm-barrel-house-fort-collins",
             "attributes": {
                 "name": "Jessup Farm Barrel House",
+                "address": null,
                 "city": "Fort Collins",
                 "state": "Colorado",
                 "postal_code": "80525-2551",
+                "phone": "9705688345",
                 "longitude": "-105.0380013",
                 "latitude": "40.5620458",
                 "website_url": "http://jessupfarm.com/barrel-house/"
@@ -96,9 +110,11 @@
             "id": "three-barrel-brewing-co-del-norte",
             "attributes": {
                 "name": "Three Barrel Brewing Co",
+                "address": null,
                 "city": "del Norte",
                 "state": "Colorado",
                 "postal_code": "81132-2204",
+                "phone": "7196570681",
                 "longitude": "-106.3567109",
                 "latitude": "37.6790756",
                 "website_url": "http://www.threebarrelbrew.com"
@@ -109,9 +125,11 @@
             "id": "tilted-barrel-brew-pub-loveland",
             "attributes": {
                 "name": "Tilted Barrel Brew Pub",
+                "address": null,
                 "city": "Loveland",
                 "state": "Colorado",
                 "postal_code": "80538",
+                "phone": "9706198950",
                 "longitude": "-105.0773167",
                 "latitude": "40.42158016",
                 "website_url": "http://www.tiltedbarrelbrewpub.com"
