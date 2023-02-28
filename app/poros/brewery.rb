@@ -21,8 +21,8 @@ class Brewery
     @postal_code = data[:attributes][:postal_code]
     @longitude = data[:attributes][:longitude]
     @latitude = data[:attributes][:latitude]
-    # @phone = data[:phone]
-    @website = data[:website_url]
+    # @phone = data[:attributes][:phone]
+    @website = data[:attributes][:website_url]
   end
   
 end
