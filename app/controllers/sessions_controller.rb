@@ -1,9 +1,8 @@
 class SessionsController < ApplicationController
   def create
     binding.pry
-    user = UserFacade.create_or_find_by(email: user_params[:email])
-    user.update(user_params)
-    session[:user_id] = user.id
+    user = BackendService.user_create_or_find(user_params)
+    session[:user_id] = user_params[:google_id]
     redirect_to user_path
   end
 

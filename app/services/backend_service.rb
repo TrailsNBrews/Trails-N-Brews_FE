@@ -10,4 +10,10 @@ class BackendService
   def self.response(uri)
     connection.get(uri)
   end
+
+  def self.user_create_or_find(params)
+    connection.post('/users') do |req|
+      req.body = params
+    end
+  end
 end
