@@ -6,6 +6,7 @@ class Trail
               :bathrooms
 
   def initialize(data)
+    # binding.pry
     @id = data[:id]
     @type =data[:type]
     @name = data[:attributes][:name]
