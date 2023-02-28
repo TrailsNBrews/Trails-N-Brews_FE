@@ -1,0 +1,15 @@
+{
+  "data": {
+      "type": "micro",
+      "id": "new-terrain-brewing-company-golden",
+      "attributes": {
+          "name": "New Terrain Brewing Company",
+          "city": "Golden",
+          "state": "Colorado",
+          "postal_code": "80403-1863",
+          "longitude": "-105.1851036",
+          "latitude": "39.77781975",
+          "website_url": "http://newterrainbrewing.com"
+      }
+  }
+}

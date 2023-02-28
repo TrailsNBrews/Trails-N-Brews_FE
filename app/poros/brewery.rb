@@ -8,19 +8,20 @@ class Brewery
               :postal_code,
               :longitude,
               :latitude,
-              :phone,
+              # :phone,
               :website
 
   def initialize(data)
+    # binding.pry
     @id = data[:id]
-    @name = data[:name]
-    @street = data[:street]
-    @city = data[:city]
-    @state = data[:state]
-    @postal_code = data[:postal_code]
-    @longitude = data[:longitude]
-    @latitude = data[:latitude]
-    @phone = data[:phone]
+    @name = data[:attributes][:name]
+    @street = data[:attributes][:street]
+    @city = data[:attributes][:city]
+    @state = data[:attributes][:state]
+    @postal_code = data[:attributes][:postal_code]
+    @longitude = data[:attributes][:longitude]
+    @latitude = data[:attributes][:latitude]
+    # @phone = data[:phone]
     @website = data[:website_url]
   end
   

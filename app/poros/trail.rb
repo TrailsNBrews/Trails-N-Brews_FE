@@ -1,5 +1,4 @@
 class Trail 
-
   attr_reader :id,
               :type,
               :name,
@@ -13,5 +12,4 @@ class Trail
     @coordinates = data[:attributes][:coordinates]
     @bathrooms = data[:attributes][:bathrooms]
   end
-
 end
