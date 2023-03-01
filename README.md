@@ -1,39 +1,25 @@
 # Trails-N-Brews_FE
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+[![Activity][commit-activity-shield]][commit-activity-url]
+[![Commit][last-commit-shield]][last-commit-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![Code-Size][code-size-shield]][code-size-url]<br>
 
+[![Watchers][watchers-shield]][watchers-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE">
+    <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="125" height="125">
   </a>
-
-  <h3 align="center">Trails N Brews</h3>
+  <h3 align="center">Trails N Brews, FE</h3>
 
   <p align="center">
     A guide to lead hikers to "watering holes"
@@ -49,17 +35,16 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
+  <ul list-style-position="inside">
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
         <li><a href="#learning-goals">Learning Goals</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
       </ul>
     </li>
     <li>
@@ -69,21 +54,22 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#endpoints">Endpoints</a></li>
+      </ul>
+    </li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#developers">Developers</a></li>
+    <li><a href="#project-managers-instructors">Project Managers-Instructors</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Trails N' Brews (TnB) is a web app seeking to answer one of life's greatest needs for the Colorado hiker. Whether it be a 1 mile trail along the front range or an expedition to the summit of one this great state's many 14ers all hikers want to know where the nearest brewery is to celebrate and wind down from their achievement. TnB is designed with service oriented architecture.
 
@@ -92,17 +78,12 @@ This repository holds the front end code for TnB, the backend repo is located [h
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
 * [![Rails]][Rails-url]
 <!-- Others will be added as needed -->
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Learning Goals
 
@@ -113,13 +94,9 @@ This repository holds the front end code for TnB, the backend repo is located [h
 * Service integration and implementation
 * OAuth utilization
 * Efficient API consumption
-
 <!-- Others can be added as needed -->
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -133,9 +110,8 @@ This repository holds the front end code for TnB, the backend repo is located [h
 
 _Below are instructions for forking and cloning this repo_
 
-1. Clone the repo
-
 <!-- add clone gif http://www.giphy.com/gifs/MGGuPEeUJu6qVeIMv5 -->
+1. Clone the repo
    ```sh
    git clone git@github.com:TrailsNBrews/Trails-N-Brews_FE.git
    ```
@@ -154,19 +130,6 @@ _Below are instructions for forking and cloning this repo_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Examples 
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -180,7 +143,11 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Usage
 
+### Endpoints
+
+- Root directory: 'https://trails-n-brews.herokuapp.com'
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -195,7 +162,7 @@ Don't forget to give the project a star! Thanks again!
 2. Create your Feature Branch 
   `git checkout -b feature/AmazingFeatureName`
 3. Commit your Changes 
-  `git commit -m 'Add some AmazingFeatureName'`
+  `git commit -m 'Add some AmazingFeatureName`
 4. Push to the Branch 
   `git push origin feature/AmazingFeatureName`
 5. Open a Pull Request
@@ -204,41 +171,65 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
-<!-- ## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
-
 <!-- CONTACT -->
 ## Contact
 
 ## Developers
 
-1. [Brandon Gray](https://github.com/bGray88)
-2. [Christian McCabe](https://github.com/cemccabe)
-3. [Kyle Ledin](https://github.com/Kledin85)
-4. [Leo Banos Garcia](https://github.com/banosl)
-5. [Max MacGillivray](https://github.com/MoxieMax)
-6. [Sergio Azcona](https://github.com/Sergio-Azcona)
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/111726505?s=400&u=30c6a5c91b611750a32a1a07dc1da834684dffa1&v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Brandon Gray<br>
+    <a href="https://github.com/bGray88">Github: bGray88</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/46434166?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Christian McCabe<br>
+    <a href="https://github.com/cemccabe">Github: cemccabe</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/112499285?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Kyle Ledin<br>
+    <a href="https://github.com/Kledin85">Github: Kledin85</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/111591731?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Leo Banos Garcia<br>
+    <a href="https://github.com/banosl">Github: banosl</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/108768349?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Max MacGillivray<br>
+    <a href="https://github.com/MoxieMax">Github: MoxieMax</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/106788066?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Sergio Azcona<br>
+    <a href="https://github.com/Sergio-Azcona">Github: Sergio-Azcona</a>
+  </p>
+</div>
 
-[Organization Repository Link](https://github.com/orgs/TrailsNBrews/repositories)
-[Backend Link](https://github.com/TrailsNBrews/trails_n_brews_BE)
+Project Links: <br> 
+[Organization Link](https://github.com/orgs/TrailsNBrews/repositories) <br>
+[Backend Link](https://github.com/TrailsNbrews/trails_n_brews_BE) <br>
+[Frontend Link](https://github.com/TrailsNBrews/Trails-N-Brews_FE)
 
 ## Project Managers/Instructors
 
 1. Meg Stang
 2. Mike Dao
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -248,20 +239,25 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[forks-url]: https://github.com/TrailsNBrews/trails_n_brews_BEe/network/members
-[stars-shield]: https://img.shields.io/github/stars/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[stars-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[issues-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/issues
-[license-shield]: https://img.shields.io/github/license/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[license-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/blob/master/LICENSE.txt
+[commit-activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+[commit-activity-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/commits/main
+[last-commit-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+[last-commit-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/commits/main
+[contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[contributors-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[forks-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FEe/network/members
+[stars-shield]: https://img.shields.io/github/stars/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[stars-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/stargazers
+[issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[issues-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues
+[code-size-shield]: https://img.shields.io/github/languages/code-size/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+[code-size-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/wiki
+[watchers-shield]: https://img.shields.io/github/watchers/TrailsNBrews/Trails-N-Brews_FE?style=social
+[watchers-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/network/members
+[license-shield]: https://img.shields.io/github/license/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[license-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
