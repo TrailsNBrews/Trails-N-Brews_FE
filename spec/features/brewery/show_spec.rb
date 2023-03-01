@@ -10,10 +10,10 @@ RSpec.describe 'Brewery show page' do
     visit brewery_path("10-barrel-brewing-co-denver-denver")
     
     expect(page).to have_content("10 Barrel Brewing Co - Denver")
-    # expect(page).to have_content("2620 Walnut St")
+    expect(page).to have_content("No address on file")
     expect(page).to have_content("Denver")
     expect(page).to have_content("7205738992")
-    expect(page).to_not have_content("Website")
+    expect(page).to have_content("Website")
   end
   it 'shows the breweries website if it has one provided' do
 
