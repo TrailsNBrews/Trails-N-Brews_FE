@@ -1,6 +1,7 @@
 <div class='container'>
   <div class='text-center'>
     <div class='page-header'>
+    <h1>Search for a brewery</h1>
       <%= form_with url: breweries_path, method: :get, local: true do |form| %>
         <%= form.text_field :name %>
         <%= form.submit "Find Brewery" %>
@@ -8,7 +9,16 @@
 
       <% if params[:name] %>
         <% @breweries.each do |brewery| %>
-          <p><%=link_to brewery.name, brewery_path(brewery.id) %></p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th><%=link_to brewery.name, brewery_path(brewery.id) %></th>
+              </tr>
+              <tr>
+                <th>Test</th>
+              </tr>
+            </thead>
+          </tbody>
         <% end %>
       <% end %>
     </div>
