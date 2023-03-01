@@ -19,7 +19,7 @@
   <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE">
     <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="125" height="125">
   </a>
-  <h3 align="center">Trails N Brews, BE</h3>
+  <h3 align="center">Trails N Brews, FE</h3>
 
   <p align="center">
     A guide to lead hikers to "watering holes"
