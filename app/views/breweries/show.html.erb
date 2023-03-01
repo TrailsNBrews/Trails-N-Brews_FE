@@ -4,7 +4,7 @@
       <h1><%= @brewery.name %></h1>
       <h3>Street Address: <%= @brewery.street %></h3>
       <h3>City: <%= "#{@brewery.city}, #{@brewery.state}" %></h3>
-      <h3>Phone: <%= @brewery.phone %></h3>
+      <h3>Phone: <%= number_to_phone(@brewery.phone, area_code: true) %></h3>
 
       <% unless @brewery.website == "No website on file" %>
         <h3>Website: <%= link_to "#{@brewery.website}", @brewery.website  %></h3>
