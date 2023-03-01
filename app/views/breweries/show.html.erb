@@ -5,9 +5,14 @@
       <h3>Street Address: <%= @brewery.street %></h3>
       <h3>City: <%= "#{@brewery.city}, #{@brewery.state}" %></h3>
       <h3>Phone: <%= @brewery.phone %></h3>
-      <h3>Website: <%= link_to "#{@brewery.website}", @brewery.website  %></h3>
 
-       <% unless @brewery.latitude.nil? || @brewery.longitude.nil? %>
+      <% unless @brewery.website == "No website on file" %>
+        <h3>Website: <%= link_to "#{@brewery.website}", @brewery.website  %></h3>
+      <% else %>
+        <h3>Website: <%= @brewery.website %> </h3>
+      <% end %>
+
+      <% unless @brewery.latitude.nil? || @brewery.longitude.nil? %>
         <iframe
           width="600"
           height="450"
@@ -17,9 +22,9 @@
           referrerpolicy="no-referrer-when-downgrade"
           src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.latitude},#{@brewery.longitude}" %>>
         </iframe>
-        <% else %> 
-          <h2> Missing coordinates </h2>
-        <% end %>
+      <% else %> 
+        <h2> Missing coordinates </h2>
+      <% end %>
     </div>
   </div>
 </div>
