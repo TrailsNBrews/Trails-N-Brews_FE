@@ -10,7 +10,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![Code-Size][code-size-shield]][code-size-url]<br>
-
 [![Watchers][watchers-shield]][watchers-url]
 
 <!-- PROJECT LOGO -->
@@ -80,8 +79,8 @@ This repository holds the front end code for TnB, the backend repo is located [h
 
 ### Built With
 
-* [![Rails]][Rails-url]
-<!-- Others will be added as needed -->
+  [![Ruby]][Ruby-url] [![Rails]][Rails-url] [![Bootstrap]][Bootstrap-url]
+  [![Heroku]][Heroku-url] [![Postgres]][Heroku-url] [![Postman]][Postman-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,49 +129,48 @@ _Below are instructions for forking and cloning this repo_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
+
+- Visit https://trails-n-brews.herokuapp.com/ to arrive at the landing page:
+  - Click the 'Sign in/Sign up with Google' button (a Google account is required to use this app)
+  - Log in to a Google account
+  - If login is successful, the page will redirect to a user dashboard
+  ![alt text](app/assets/images/welcome_page.png)
+
+- Dashboard:
+  - From the user dashboard, a user can find a trail, find a brewery, or list their accomplishments
+  ![alt text](app/assets/images/user_dashboard.png)
+
+- Find a trail:
+  - Click the `Find Trail` button, and enter a search for a trail 
+  - The top three trails are displayed
+  ![alt text](app/assets/images/search_trails.png)
+
+- View a trail:
+  - Click on the desired trail
+  - A description of the trail will display along with its difficulty rating and location
+  - A location of the trailhead is provided by utilizing Google Maps API
+  ![alt text](app/assets/images/trail_show.png)
+
+- Find a brewery:
+  - Click the `Find Brewery` button, and enter a search for a brewery 
+  - The top five breweries are displayed
+  ![alt text](app/assets/images/search_breweries.png)
+
+- View a brewery:
+  - Click on the desired brewery
+  - The brewery's pertinent information will display
+  - A location of the brewery is provided by utilizing Google Maps API
+  ![alt text](app/assets/images/brewery_show.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Endpoints
 
 - Root directory: 'https://trails-n-brews.herokuapp.com'
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-  <!-- fork gif http://www.giphy.com/gifs/Q0m5xgakobdn2Sot01 -->
-2. Create your Feature Branch 
-  `git checkout -b feature/AmazingFeatureName`
-3. Commit your Changes 
-  `git commit -m 'Add some AmazingFeatureName`
-4. Push to the Branch 
-  `git push origin feature/AmazingFeatureName`
-5. Open a Pull Request
-
-<!-- PR gif http://www.giphy.com/gifs/CACCdm76hZKBdaaz2Y -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
-## Contact
 
 ## Developers
 
@@ -231,37 +229,46 @@ Project Links: <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [Choose an Open Source License](https://choosealicense.com)
-* ["The Best README Template" by Github User othneil](https://github.com/othneildrew/Best-README-Template)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[commit-activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[commit-activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
 [commit-activity-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/commits/main
-[last-commit-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+[last-commit-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
 [last-commit-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/commits/main
-[contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [contributors-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
-[forks-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FEe/network/members
-[stars-shield]: https://img.shields.io/github/stars/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
+[forks-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/network/members
+[stars-shield]: https://img.shields.io/github/stars/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [stars-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [issues-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues
-[code-size-shield]: https://img.shields.io/github/languages/code-size/TrailsNBrews/Trails-N-Brews_FE?style=for-the-badge
+[code-size-shield]: https://img.shields.io/github/languages/code-size/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
 [code-size-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/wiki
-[watchers-shield]: https://img.shields.io/github/watchers/TrailsNBrews/Trails-N-Brews_FE?style=social
+[watchers-shield]: https://img.shields.io/github/watchers/TrailsNBrews/trails_n_brews_BE?style=social
 [watchers-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/network/members
-[license-shield]: https://img.shields.io/github/license/TrailsNBrews/Trails-N-Brews_FE.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [license-url]: https://github.com/TrailsNBrews/Trails-N-Brews_FE/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+
+[Bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-[Rails]: https://img.shields.io/badge/-Ruby%20on%20Rails-CC0000?logo=ruby-on-rails&logoColor=white&style=for-the-badge
-[Rails-url]: https://rubyonrails.org 
+
+[Ruby]: https://img.shields.io/badge/-Ruby-CC342D?style=flat&logo=ruby&logoColor=white
+[Ruby-url]: https://www.ruby-lang.org/en/
+
+[Rails]: https://img.shields.io/badge/-Ruby%20on%20Rails-CC0000?style=flat&logo=rubyonrails&logoColor=white
+[Rails-url]: https://rubyonrails.org
+
+[Heroku]: https://img.shields.io/badge/-Heroku-430098?style=flat&logo=heroku&logoColor=white
+[Heroku-url]: https://www.heroku.com/
+
+[Postgres]: https://img.shields.io/badge/-Postgres-4169E1?style=flat&logo=postgresql&logoColor=white
+[Postgres-url]: https://www.postgresql.org/
+
+[Postman]: https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white
+[Postman-url]: https://www.postman.com/
