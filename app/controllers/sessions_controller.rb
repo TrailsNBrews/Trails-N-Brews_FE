@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def create
-    binding.pry
     user = BackendService.user_create_or_find(user_params)
     session[:user_id] = user_params[:google_id]
     redirect_to user_path
