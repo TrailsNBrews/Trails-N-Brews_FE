@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": "63532",
+            "co_id": "1174",
+            "type": "Trailhead",
+            "attributes": {
+                "name": "Buffalo Trailhead",
+                "latitude": "39.864716523573556",
+                "longitude": "-105.40317584707572",
+                "bathrooms": "yes"
+            }
+        },
+        {
+            "id": "199986",
+            "co_id": "2143",
+            "type": "Trailhead",
+            "attributes": {
+                "name": "Buffalo Cabin Trailhead",
+                "latitude": "39.62019132006707",
+                "longitude": "-106.10989710983665",
+                "bathrooms": "no"
+            }
+        },
+        {
+            "id": "201796",
+            "co_id": "2397",
+            "type": "Trailhead",
+            "attributes": {
+                "name": "Buffalo Pass Trailhead",
+                "latitude": "40.544190445356826",
+                "longitude": "-106.68505326398659",
+                "bathrooms": ""
+            }
+        },
+        {
+            "id": "63243",
+            "co_id": "1035",
+            "type": "Trailhead",
+            "attributes": {
+                "name": "Buffalo Ridge Trailhead",
+                "latitude": "40.97711385007641",
+                "longitude": "-106.6907081004974",
+                "bathrooms": "no"
+            }
+        },
+        {
+            "id": "62818",
+            "co_id": "810",
+            "type": "Trailhead",
+            "attributes": {
+                "name": "Buffalo (Colorado Trail) Trailhead",
+                "latitude": "39.342119053722854",
+                "longitude": "-105.33568547926873",
+                "bathrooms": "yes"
+            }
+        }
+    ]
+}
