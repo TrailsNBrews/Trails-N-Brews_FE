@@ -1,0 +1,92 @@
+{
+  "data": {
+      "trail": {
+          "id": "63243",
+          "co_id": "1035",
+          "type": "Trailhead",
+          "attributes": {
+              "name": "Buffalo Ridge Trailhead",
+              "latitude": "40.97711385007641",
+              "longitude": "-106.6907081004974",
+              "bathrooms": "no"
+          }
+      },
+      "breweries": [
+          {
+              "type": "micro",
+              "id": "butcherknife-brewing-company-steamboat-springs",
+              "attributes": {
+                  "name": "Butcherknife Brewing Company",
+                  "street": "2875 Elk River Rd",
+                  "city": "Steamboat Springs",
+                  "state": "Colorado",
+                  "postal_code": "80487-5076",
+                  "phone": "9708792337",
+                  "longitude": "-106.857763",
+                  "latitude": "40.510887",
+                  "website_url": "http://www.butcherknifebrewing.com"
+              }
+          },
+          {
+              "type": "brewpub",
+              "id": "mountain-tap-brewery-steamboat-springs",
+              "attributes": {
+                  "name": "Mountain Tap Brewery",
+                  "street": "910 Yampa Street",
+                  "city": "Steamboat Springs",
+                  "state": "Colorado",
+                  "postal_code": "80487",
+                  "phone": "9708796646",
+                  "longitude": "-106.8355071",
+                  "latitude": "40.4853039",
+                  "website_url": "http://www.mountaintapbrewery.com"
+              }
+          },
+          {
+              "type": "brewpub",
+              "id": "mahogany-ridge-brewery-and-grill-steamboat-springs",
+              "attributes": {
+                  "name": "Mahogany Ridge Brewery & Grill",
+                  "street": "435 Lincoln Ave",
+                  "city": "Steamboat Springs",
+                  "state": "Colorado",
+                  "postal_code": "80477-5084",
+                  "phone": "9708793773",
+                  "longitude": "-106.8306883",
+                  "latitude": "40.48389236",
+                  "website_url": null
+              }
+          },
+          {
+              "type": "brewpub",
+              "id": "altitude-chophouse-and-brewery-laramie",
+              "attributes": {
+                  "name": "Altitude Chophouse and Brewery",
+                  "street": "320 S 2nd St",
+                  "city": "Laramie",
+                  "state": "Wyoming",
+                  "postal_code": "82070-3612",
+                  "phone": "3077214031",
+                  "longitude": "-105.5953366",
+                  "latitude": "41.31038565",
+                  "website_url": "http://www.altitudechophouse.com"
+              }
+          },
+          {
+              "type": "brewpub",
+              "id": "library-sports-grill-and-brewery-laramie",
+              "attributes": {
+                  "name": "Library Sports Grill and Brewery",
+                  "street": "201 E Custer St",
+                  "city": "Laramie",
+                  "state": "Wyoming",
+                  "postal_code": "82070-3633",
+                  "phone": "3077420500",
+                  "longitude": "-105.5947118",
+                  "latitude": "41.3093843",
+                  "website_url": "http://laramie.librarysportsgrille.com"
+              }
+          }
+      ]
+  }
+}
