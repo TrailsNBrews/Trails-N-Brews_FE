@@ -1,10 +1,11 @@
-<div class="jumbotron">
-  <div class='container'>
-    <div class='text-center'>
-      <div class='page-header'>
-        <h1> Trails N' Brews </h1>
-        <%= button_to 'Sign in/Sign up with google', google_login_path, method: :get %>
-      </div>
+<div class="bg-image d-flex justify-content-center align-items-center"
+  style="background-image: url('https://images.unsplash.com/photo-1605196560547-b2f7281b7355?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  height: 100vh;
+  padding-top: 100px;">
+  <div class='text-center'>
+    <div class='body'>
+      <h1><p style="color:white;font-size:500%;font-weight:400;text-shadow:7px 7px 7px #666;"> Trails N' Brews </p></h1>
+      <%= link_to 'Sign in/Sign up with Google', google_login_path, class: "btn btn-primary btn-lg" %>
     </div>
   </div>
 </div>
