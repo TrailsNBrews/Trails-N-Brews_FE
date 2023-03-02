@@ -1,5 +1,5 @@
 class BreweriesController < ApplicationController
-    def index
+  def index
     if params[:name]
         @breweries = BreweryFacade.search_breweries("/api/v1/search_breweries?name=#{params[:name]}")
             if @breweries == []
@@ -7,8 +7,16 @@ class BreweriesController < ApplicationController
             end
         end
     end
+  end
 
-    def show
-        @brewery = BreweryFacade.show_brewery("api/v1/search_breweries/#{params[:id]}")
+  def show
+    @brewery  = BreweryFacade.show_brewery("api/v1/search_breweries/#{params[:id]}")
+    if current_user
+      if BackendService.accomplishments(current_user)[:data][:breweries].include?(@brewery)
+        @favorite = true
+      else
+        @favorite = false
+      end
     end
+  end
 end

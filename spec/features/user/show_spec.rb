@@ -29,12 +29,23 @@ RSpec.describe 'User show' do
   end
 
   it 'has a button that takes me to the users accomplishments page' do
+    WebMock.allow_net_connect!
+    user_params = ({
+      first_name: 'Jimmy',
+      last_name:  'Jimmington',
+      email: 'jim@email.com',
+      google_id: '1346464641',
+      google_token: 'dj6s5f4sl5fj'
+    })
+    BackendService.user_create_or_find(user_params)
+
     visit user_path
 
     expect(page).to have_button("Accomplishments")
 
     click_on "Accomplishments"
 
-    expect(current_path).to eq(accomplishments_user_path)
+    expect(current_path).to eq(user_accomplishments_path)
+    WebMock.disable_net_connect!
   end
 end
