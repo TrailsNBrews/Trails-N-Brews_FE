@@ -1,6 +1,5 @@
 class TrailFacade
   def self.search_trails(uri)
-    # binding.pry
     @trails = filter_trails(uri)[:data].map do |trail|
       Trail.new(trail)
     end
@@ -13,7 +12,6 @@ class TrailFacade
       Brewery.new(brewery)
     end
     trail_breweries = {trail => breweries}
-    # binding.pry
   end
 
   def self.filter_trails(uri)
