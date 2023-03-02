@@ -2,6 +2,7 @@ class AccomplishmentsController < ApplicationController
   def index
     stats = BackendService.accomplishments(current_user)
     @trails    = JSON.parse(stats.body, symbolize_names: true)[:data][:user][:trails]
+# require 'pry';binding.pry
     @breweries = JSON.parse(stats.body, symbolize_names: true)[:data][:user][:breweries]
   end
 

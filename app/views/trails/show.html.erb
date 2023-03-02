@@ -20,7 +20,7 @@
         loading="lazy"
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
-        src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@trail.latitude},#{@trail.longitude}" %>
+        src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@trail.latitude},#{@trail.longitude}" %>>
       </iframe>
 
       <h3><%= button_to "Add to Favorites", user_accomplishments_path, params: { user: current_user, trail: @trail }, method: :post, disabled: @favorite  %></h3>
