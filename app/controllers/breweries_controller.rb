@@ -2,7 +2,7 @@ class BreweriesController < ApplicationController
     def index
     if params[:name]
         @breweries = BreweryFacade.search_breweries("/api/v1/search_breweries?name=#{params[:name]}")
-            if @breweries = []
+            if @breweries == []
                 flash.alert = "Search returned no results"
             end
         end

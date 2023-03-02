@@ -4,7 +4,6 @@ class BreweryService
   end
 
   def self.parse_response(uri)
-    # binding.pry
     JSON.parse(response(uri).body, symbolize_names: true)
   end
 
