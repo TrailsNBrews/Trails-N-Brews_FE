@@ -1,8 +1,14 @@
 <div class='container text-center page-header row'>
   <div class="col-sm-4">
     <h1>Completed Trails</h1>
+    <% @trails.each do |trail| %>
+      <% link_to trail.name, trail_path(trail.id) %>
+    <% end %>
   </div>
   <div class="col-sm-4">
     <h1>Breweries Visited</h1>
+    <% @breweries.each do |brewery| %>
+      <% link_to brewery.name, brewery_path(brewery.id) %>
+    <% end %>
   </div>
 </div>

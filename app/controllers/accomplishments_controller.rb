@@ -1,8 +1,12 @@
 class AccomplishmentsController < ApplicationController
-  def index; end
+  def index
+    stats = BackendService.accomplishments(current_user)
+    @trails    = stats[:user][:trails]
+    @breweries = stats[:user][:breweries]
+  end
 
   def create
-    BackendService.accomplishments_trail(params[:user], params[:trail]) if params[:trail]
-    BackendService.accomplishments_brewery(params[:user], params[:brewery]) if params[:brewery]
+    BackendService.accomplishments_trail(current_user, params[:trail]) if params[:trail]
+    BackendService.accomplishments_brewery(current_user, params[:brewery]) if params[:brewery]
   end
 end
