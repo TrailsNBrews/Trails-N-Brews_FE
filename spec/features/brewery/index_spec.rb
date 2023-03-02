@@ -50,19 +50,12 @@ RSpec.describe "brewery index" do
            }).
          to_return(status: 200, body: json_response, headers: {})
   
-        visit breweries_path
-        fill_in(:name, with: "cheese")
-        click_button 'Find Brewery'
-    
-        expect(current_path).to eq(breweries_path)
-        expect(page).to have_content("Search returned no results")
+      visit breweries_path
+      fill_in(:name, with: "cheese")
+      click_button 'Find Brewery'
+  
+      expect(current_path).to eq(breweries_path)
+      expect(page).to have_content("Search returned no results")
     end
   end
-  # 
-  # describe 'user create or find' do
-  #   it 'can create or find a user'  do
-  # 
-  #   end
-  # end
-  
 end
