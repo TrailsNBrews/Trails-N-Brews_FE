@@ -36,4 +36,15 @@ RSpec.describe "brewery index" do
 
     expect(current_path).to eq(brewery_path("10-barrel-brewing-co-denver-denver"))
   end
+  
+  # describe 'sad path testing' do
+  #   it 'returns an error when no results match' do
+  #     json_response = File.read('spec/fixtures/colorado_breweries.json')
+  #     stub_request(:get, "https://evening-caverns-30828.herokuapp.com/api/v1/search_breweries?name=barrel")
+  #       .to_return(status: 200, body: json_response)
+  # 
+  #       visit breweries_path
+  #   end
+  # end
+  
 end
