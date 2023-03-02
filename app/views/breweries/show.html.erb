@@ -22,10 +22,6 @@
           src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.name.downcase.gsub(" ", "+")}" %>>
         </iframe>
 
-      <% else %> 
-        <h2> Missing coordinates </h2>
-      <% end %>
-
       <h3><%= button_to "Add to Favorites", user_accomplishments_path, params: { user: current_user, brewery: @brewery }, method: :post, disabled: @favorite  %></h3>
     </div>
   </div>
