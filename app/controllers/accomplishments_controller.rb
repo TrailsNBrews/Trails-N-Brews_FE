@@ -1,8 +1,8 @@
 class AccomplishmentsController < ApplicationController
   def index
     stats = BackendService.accomplishments(current_user)
-    @trails    = stats[:user][:trails]
-    @breweries = stats[:user][:breweries]
+    @trails    = JSON.parse(stats.body, symbolize_names: true)[:data][:user][:trails]
+    @breweries = JSON.parse(stats.body, symbolize_names: true)[:data][:user][:breweries]
   end
 
   def create
