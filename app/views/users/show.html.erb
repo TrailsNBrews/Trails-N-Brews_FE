@@ -1,11 +1,14 @@
 <div class='container'>
   <div class='text-center'>
     <div class='page-header'>
-      <h1>Welcome, <%= current_user.first_name%>!</h1>
-
-      <%= button_to "Find Trail", trails_path, method: :get %>
-      <%= button_to "Find Brewery", breweries_path, method: :get %>
-      <%= button_to "Accomplishments", user_accomplishments_path, method: :get %>
-    </div>
+       <h1>Welcome!</h1> 
+     <% if current_user%>
+       <h2><%= current_user.first_name%></h2>     
+       <% end%>
+  
+        <%= button_to "Find Trail", trails_path, method: :get %>
+        <%= button_to "Find Brewery", breweries_path, method: :get %>
+        <%= button_to "Accomplishments", user_accomplishments_path, method: :get %>
+       </div>
   </div>
 </div>

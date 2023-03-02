@@ -1,12 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'User show' do
+
+
   it 'displays a users name' do 
     visit user_path
 
     expect(current_path).to eq(user_path)
 
-    expect(page).to have_content("User name")
+    expect(page).to have_content("Welcome!")
     expect(page).to have_button("Find Trail")
     expect(page).to have_button("Find Brewery")
 
