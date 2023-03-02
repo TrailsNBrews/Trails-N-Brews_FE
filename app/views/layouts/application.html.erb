@@ -77,4 +77,11 @@
   <body>
     <%= yield %>
   </body>
+  <div class='text-center'>
+    <% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+    <% end %>
+  </div>
 </html>

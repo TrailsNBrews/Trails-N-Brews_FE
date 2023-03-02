@@ -31,4 +31,26 @@ RSpec.describe 'trails index' do
     click_link "Buffalo Ridge Trailhead"
     expect(current_path).to eq(trail_path(63243))
   end
+  
+  describe 'sad path testing' do
+    it 'returns an error when no results match' do
+      json_response = File.read('spec/fixtures/no_trail_results.json')
+      
+      stub_request(:get, "https://evening-caverns-30828.herokuapp.com/api/v1/search_trails?search=cheese").
+         with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v2.7.4'
+           }).
+         to_return(status: 200, body: json_response, headers: {})
+  
+      visit trails_path
+      fill_in(:name, with: "cheese")
+      click_button 'Find Trails'
+  
+      expect(current_path).to eq(trails_path)
+      expect(page).to have_content("Search returned no results")
+    end
+  end
 end
