@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
     unless @current_user
       user = JSON.parse(BackendService.user_create_or_find(HTTP_AUTH_VAL: session[:user_email], HTTP_AUTH_TOKEN: session[:user_token]).body, symbolize_names: true) if session[:user_id]
       if user
-        @current_user = User.new(user.deep_symbolize_keys)
+        @current_user = User.new(user)
       end
     end
   end
