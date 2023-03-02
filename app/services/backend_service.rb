@@ -39,6 +39,6 @@ class BackendService
   end
 
   def self.accomplishments(user)
-    connection.get("/api/v1/user_accomplishments/#{user}")
+    connection.get("/api/v1/user_accomplishments/#{user.id}")
   end
 end

@@ -11,7 +11,7 @@ class TrailsController < ApplicationController
     @trail = trail_breweries[0]
     @breweries = trail_breweries[1]
     if current_user
-      if BackendService.accomplishments(current_user)[:data][:trails].include?(@brewery)
+      if JSON.parse(BackendService.accomplishments(current_user).body, symbolize_names: true)[:data][:user][:trails].include?(@trail)
         @favorite = true
       else
         @favorite = false
