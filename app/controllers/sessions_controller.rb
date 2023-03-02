@@ -11,6 +11,12 @@ class SessionsController < ApplicationController
     redirect_to user_path
   end
 
+  def logout
+    session.destroy
+    flash[:success] = "Not all who wander are lost - JRR Tolkien"
+    redirect_to root_path
+  end
+
   private
 
   def auth_hash
