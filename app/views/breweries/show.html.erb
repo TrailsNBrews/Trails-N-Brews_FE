@@ -12,7 +12,6 @@
         <h3>Website: <%= @brewery.website %> </h3>
       <% end %>
 
-      <% unless @brewery.latitude.nil? || @brewery.longitude.nil? %>
         <iframe
           width="600"
           height="450"
@@ -20,11 +19,9 @@
           loading="lazy"
           allowfullscreen
           referrerpolicy="no-referrer-when-downgrade"
-          src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.latitude},#{@brewery.longitude}" %>>
+          src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.name.downcase.gsub(" ", "+")}" %>>
         </iframe>
-      <% else %> 
-        <h2> Missing coordinates </h2>
-      <% end %>
+     
     </div>
   </div>
 </div>

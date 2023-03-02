@@ -12,8 +12,6 @@
     </div>
     <div class="col-sm-8 text-left"> 
       <hr>
-      <p>Lorem ipsum...</p>
-      <h3>Trail length:</h3>
 
       <iframe
         width="600"
@@ -25,6 +23,8 @@
         src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@trail.latitude},#{@trail.longitude}" %>>
       </iframe>
 
+    <h3>More info about <%= @trail.name %> here: <%= link_to "COTREX Hiking App", "https://trails.colorado.gov/trailheads/#{@trail.name.downcase.gsub(" ", "-")}-#{@trail.co_id}" %></h3>
+    
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

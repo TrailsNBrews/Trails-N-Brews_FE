@@ -3,8 +3,9 @@ class Trail
               :type,
               :name,
               :latitude,
-              :longitude
-              :bathrooms
+              :longitude,
+              :bathrooms,
+              :co_id
 
   def initialize(data)
     @id = data[:id]
@@ -13,5 +14,6 @@ class Trail
     @latitude = data[:attributes][:latitude]
     @longitude = data[:attributes][:longitude]
     @bathrooms = data[:attributes][:bathrooms]
+    @co_id = data[:co_id]
   end
 end
