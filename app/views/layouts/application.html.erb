@@ -65,17 +65,15 @@
         <li class="active"><a href=<%= root_path %>>Home</a></li>
         <li><a href=<%=trails_path%>>Trails</a></li>
         <li><a href=<%=breweries_path%>>Breweries</a></li>
-        <li><a href=<%=user_path%>>Profile</a></li>
         <li><a href="https://github.com/orgs/TrailsNBrews/people">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if !current_page?(root_path) %>
-          <% if current_user %>
-            <li><a href=<%= logout_path %>><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
-          <% else %>
-            <li><a href=<%= google_login_path %>><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          <% end %>  
-        <% end %>
+        <% if current_user %>
+          <li><a href=<%= logout_path %>><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+          <li><a href=<%=user_path%>>Profile</a></li>
+        <% else %>
+          <li><a href=<%= google_login_path %>><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <% end %>  
       </ul>
     </div>
   </div>
