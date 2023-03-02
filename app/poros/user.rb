@@ -1,10 +1,11 @@
 class User
 
   attr_reader :id,
-              :name,
-              :street,
-              :city,
-              :state
+              :first_name,
+              :last_name,
+              :email,
+              :google_id,
+              :google_token
 
   def initialize(data)
     @id = data[:id]
