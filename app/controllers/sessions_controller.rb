@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     BackendService.user_create_or_find(user_params)
     session[:user_id]    = user_params[:google_id]
     session[:user_email] = user_params[:email]
-    session[:user_token] = user_params[:token]
+    session[:user_token] = user_params[:google_token]
 
     redirect_to user_path
   end
@@ -30,7 +30,7 @@ class SessionsController < ApplicationController
     {
       google_id: auth_hash['uid'],
       email: auth_hash['info']['email'],
-      token: auth_hash['credentials']['token'],
+      google_token: auth_hash['credentials']['token'],
       first_name: auth_hash['info']['first_name'],
       last_name: auth_hash['info']['last_name']
     }

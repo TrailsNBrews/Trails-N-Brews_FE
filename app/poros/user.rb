@@ -9,6 +9,7 @@ class User
 
   def initialize(data)
     @id = data[:id]
+    
     @first_name = data[:attributes][:first_name]
     @last_name = data[:attributes][:last_name]
     @email = data[:attributes][:email]
