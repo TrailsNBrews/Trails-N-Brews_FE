@@ -8,12 +8,11 @@ class User
               :google_token
 
   def initialize(data)
-    @id = data[:id]
-    
-    @first_name = data[:attributes][:first_name]
-    @last_name = data[:attributes][:last_name]
-    @email = data[:attributes][:email]
-    @google_id = data[:attributes][:google_id]
-    @google_token = data[:attributes][:google_token]
+    @id = data[0][:id]
+    @first_name = data[0][:attributes][:first_name]
+    @last_name = data[0][:attributes][:last_name]
+    @email = data[0][:attributes][:email]
+    @google_id = data[0][:attributes][:google_id]
+    @google_token = data[0][:attributes][:google_token]
   end
 end
