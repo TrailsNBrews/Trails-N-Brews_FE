@@ -1,18 +1,22 @@
-<div class='container'>
+<div class="bg-image d-flex justify-content-center align-items-center"
+  style="background-image: url('https://images.unsplash.com/photo-1592859600972-1b0834d83747?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  height: 100vh;
+  padding-top: 100px;">
   <div class='text-center'>
-    <div class='page-header'>
-    <h1>Search Trails</h1>
+    <div class='body'>
+      <h1><p style="background-color:black;color:white;font-size:300%;font-weight:400;"> Search Trails </p></h1>
       <%= form_with url: trails_path, method: :get, local: true do |form| %>
         <%= form.text_field :name %>
         <%= form.submit "Find Trails" %>
       <% end %>
+      <br><br><br>
 
       <% if params[:name] %>
         <% @trails.each do |trail| %>
           <table class="table">
             <thead>
               <tr>
-                <th><%=link_to trail.name, trail_path(trail.id) %></th>
+                <th><%=link_to trail.name, trail_path(trail.id), class: "btn btn-primary btn-lg btn-block" %></th>
               </tr>
             </thead>
           </tbody>
