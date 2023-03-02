@@ -12,7 +12,6 @@ class SessionsController < ApplicationController
   end
 
   def logout
-    # require 'pry';binding.pry
     session.destroy
     flash[:success] = "Not all who wander are lost - JRR Tolkien"
     redirect_to root_path
