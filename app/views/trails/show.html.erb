@@ -24,7 +24,9 @@
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
         src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{a},#{b}" %>
-      </iframe>
+      ></iframe>
+
+      <h3><%= button_to "Add to Favorites", user_accomplishments_path, params: { user: current_user, trail: @trail }, method: :post, disabled: @favorite  %></h3>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

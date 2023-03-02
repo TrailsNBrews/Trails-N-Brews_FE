@@ -25,4 +25,16 @@ RSpec.describe 'Brewery show page' do
 
     expect(page).to have_content("http://www.barrelsbottles.com")
   end
+
+  it 'can add brewery to favorites list' do
+    WebMock.allow_net_connect!
+    visit brewery_path("barrels-and-bottles-brewery-golden")
+
+    expect(page).to have_button("Add to Favorites")
+
+    click_on("Add to Favorites")
+
+    expect(page).to have_button("Add to Favorites", disabled: true)
+    WebMock.disable_net_connect!
+  end
 end

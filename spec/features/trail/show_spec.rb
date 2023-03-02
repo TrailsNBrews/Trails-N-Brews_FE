@@ -10,4 +10,16 @@ RSpec.describe "Trails show" do
 
     expect(page).to have_content("Buffalo (Colorado Trail) Trailhead")
   end
+
+  it 'can add trail to favorites list' do
+    WebMock.allow_net_connect!
+    visit trail_path("207495")
+
+    expect(page).to have_button("Add to Favorites")
+
+    click_on("Add to Favorites")
+
+    expect(page).to have_button("Add to Favorites", disabled: true)
+    WebMock.disable_net_connect!
+  end
 end

@@ -3,12 +3,13 @@ Rails.application.routes.draw do
 
   get '/auth/google_oauth2', as: :google_login
   get '/auth/google_oauth2/callback', to: 'sessions#create'
-  resource :user, only: [:show] do 
-    get :accomplishments, on: :collection, as: :accomplishments
-    # resources :accomplishments, only: :index, controller: 'users'
+
+  # get 'sessions', to: 'sessions#create'
+  
+  resource :user, only: [:show, :create] do 
+    resources :accomplishments, only: [:index, :create], controller: 'accomplishments'
   end
 
   resources :trails, only: [:index, :show]
   resources :breweries, only: [:index, :show]
-
 end
