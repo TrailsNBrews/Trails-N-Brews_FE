@@ -14,8 +14,7 @@
       <hr>
       <p>Lorem ipsum...</p>
       <h3>Trail length:</h3>
-      <% a = @trail.coordinates.split(",").first %>
-      <% b = @trail.coordinates.split(",").last %>
+
       <iframe
         width="600"
         height="450"
@@ -23,7 +22,7 @@
         loading="lazy"
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
-        src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{a},#{b}" %>
+        src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@trail.latitude},#{@trail.longitude}" %>
       </iframe>
     </div>
     <div class="col-sm-2 sidenav">
