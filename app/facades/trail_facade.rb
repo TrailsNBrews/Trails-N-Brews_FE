@@ -1,7 +1,10 @@
 class TrailFacade
   def self.search_trails(uri)
-    @trails = filter_trails(uri)[:data].map do |trail|
-      Trail.new(trail)
+    @trails = filter_trails(uri)[:data]
+    unless @trails == nil
+      @trails.map do |trail|
+        Trail.new(trail)
+      end
     end
   end
 
