@@ -1,7 +1,12 @@
 class SessionsController < ApplicationController
+  before_action :current_user, except: [:create]
+  after_action  :current_user, only:   [:create]
+
   def create
     BackendService.user_create_or_find(user_params)
-    session[:user_id] = user_params[:google_id]
+    session[:user_id]    = user_params[:google_id]
+    session[:user_email] = user_params[:email]
+    session[:user_token] = user_params[:token]
 
     redirect_to user_path
   end

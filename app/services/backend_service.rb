@@ -12,26 +12,32 @@ class BackendService
   end
 
   def self.user_create_or_find(params)
-    connection.post('/users') do |req|
-      req.body = params
+    if params.length > 3
+      connection.post('/users') do |req|
+        req.body = params
+      end
+    else
+      connection.get('/users') do |req|
+        req.headers = params
+      end
     end
   end
 
   def self.accomplishments_trail(user, trail)
-    connection.post('/users') do |req|
+    connection.post('/user_accomplishments') do |req|
       req.params[:user] = user,
       req.params[:trail] = trail
     end
   end
 
   def self.accomplishments_brewery(user, brewery)
-    connection.post('/users') do |req|
+    connection.post('/user_accomplishments') do |req|
       req.params[:user] = user,
       req.params[:trail] = brewery
     end
   end
 
   def self.accomplishments(user)
-    connection.get("/accomplishments/#{user}")
+    connection.get("/user_accomplishments/#{user}")
   end
 end
