@@ -80,13 +80,16 @@
 </nav>
 
   <body>
-    <%= yield %>
-  </body>
+    
+    
   <div class='text-center'>
     <% flash.each do |type, msg| %>
     <div>
-      <%= msg %>
+      <i><h4><%= msg %></h4></i>
     </div>
     <% end %>
   </div>
+    <%= yield %>
+    
+  </body>
 </html>
