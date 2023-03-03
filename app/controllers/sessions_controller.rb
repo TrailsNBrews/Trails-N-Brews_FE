@@ -21,15 +21,6 @@ class SessionsController < ApplicationController
 
   def auth_hash
     request.env['omniauth.auth']
-    # {
-    #   'uid' => '1346464641',
-    #   'info' => { 
-    #     'email' =>      'jim@email.com',
-    #     'first_name' => 'Jimmy',
-    #     'last_name' =>  'Jimmington'
-    #   },
-    #   'credentials' => { 'token' => 'dj6s5f4sl5fj' }
-    # }
   end
 
   def user_params
