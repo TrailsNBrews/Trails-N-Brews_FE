@@ -1,26 +1,25 @@
 <div class='container'>
   <div class='text-center'>
-    <div class='page-header'>
-      <h1><%= @brewery.name %></h1>
+    <div class='body'>
+      <h1><p style="background-color:black;color:white;font-size:200%;font-weight:400;"><%= @brewery.name %></p></h1>
       <h3>Street Address: <%= @brewery.street %></h3>
       <h3>City: <%= "#{@brewery.city}, #{@brewery.state}" %></h3>
       <h3>Phone: <%= number_to_phone(@brewery.phone, area_code: true) %></h3>
-
       <% unless @brewery.website == "No website on file" %>
         <h3>Website: <%= link_to "#{@brewery.website}", @brewery.website  %></h3>
       <% else %>
         <h3>Website: <%= @brewery.website %> </h3>
       <% end %>
-
-        <iframe
-          width="600"
-          height="450"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.name.downcase.gsub(" ", "+")}" %>>
-        </iframe>
+      <br>
+      <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@brewery.name.downcase.gsub(" ", "+")}" %>>
+      </iframe>
       <% if current_user %>
         <h3><%= button_to "Add to Accomplishments", user_accomplishments_path, params: { user_id: current_user.id, brewery: { id: @brewery.id, name: @brewery.name } }, method: :post, disabled: @favorite  %></h3>
       <% end %>

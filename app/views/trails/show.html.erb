@@ -1,18 +1,19 @@
-<div class='container text-center page-header'>
-  <h1><%= @trail.name %></h1>
+<div class='container text-center body'>
+  <h1><p style="background-color:black;color:white;font-size:200%;font-weight:400;"><%= @trail.name %></p></h1>
 </div>
 
-<div class="container-fluid text-center">    
+<div class="container-fluid text-left">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <h3>Closest Breweries:</h3>
       <%@breweries.each do |brewery|%>
-        <p><%= link_to brewery.name, brewery_path(brewery.id)%></p>
+        <p><%= link_to brewery.name, brewery_path(brewery.id), class: "btn btn-info btn-lg" %></p>
       <% end %>
     </div>
-    <div class="col-sm-8 text-left"> 
+    
+    <div class="col-sm-8 text-center"> 
+      <h3>More info about <%= @trail.name %> here: <%= link_to "COTREX Hiking App", "https://trails.colorado.gov/trailheads/#{@trail.name.downcase.gsub(" ", "-")}-#{@trail.co_id}" %></h3>
       <hr>
-
       <iframe
         width="600"
         height="450"
@@ -28,12 +29,15 @@
       <h3>More info about <%= @trail.name %> here: <%= link_to "COTREX Hiking App", "https://trails.colorado.gov/trailheads/#{@trail.name.downcase.gsub(" ", "-")}-#{@trail.co_id}" %></h3>
     
     </div>
+
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+      <div class="card text-center" style="width: 200px;">
+        <div class="card-body">
+          <h3 class="card-title">Add Trail to Accomplishments</h5>
+          <%if current_user %>
+            <h3><%= button_to "Add to Accomplishments", user_accomplishments_path, params: { user: current_user, trail: @trail }, method: :post, disabled: @favorite, class: "btn btn-info btn-lg" %></h3>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

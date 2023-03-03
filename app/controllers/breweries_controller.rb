@@ -3,7 +3,7 @@ class BreweriesController < ApplicationController
     if params[:name]
       @breweries = BreweryFacade.search_breweries("/api/v1/search_breweries?name=#{params[:name]}")
       if @breweries == []
-          flash.alert = "Search returned no results"
+        flash.alert = "Search returned no results"
       end
     end
   end
