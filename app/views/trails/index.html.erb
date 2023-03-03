@@ -11,7 +11,7 @@
       <% end %>
       <br><br><br>
 
-      <% if params[:name] %>
+      <% if params[:name] && @trails != nil %>
         <% @trails.each do |trail| %>
           <table class="table">
             <thead>

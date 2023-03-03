@@ -68,20 +68,28 @@
         <li><a href="https://github.com/orgs/TrailsNBrews/people">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=<%= google_login_path %>><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <% if current_user %>
+          <li><a href=<%= logout_path %>><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+          <li><a href=<%=user_path%>>Profile</a></li>
+        <% else %>
+          <li><a href=<%= google_login_path %>><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <% end %>  
       </ul>
     </div>
   </div>
 </nav>
 
   <body>
-    <%= yield %>
-  </body>
+    
+    
   <div class='text-center'>
     <% flash.each do |type, msg| %>
     <div>
-      <%= msg %>
+      <i><h4><%= msg %></h4></i>
     </div>
     <% end %>
   </div>
+    <%= yield %>
+    
+  </body>
 </html>
