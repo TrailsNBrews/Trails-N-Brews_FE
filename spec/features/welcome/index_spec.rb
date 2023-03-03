@@ -8,7 +8,7 @@ RSpec.describe 'Welcome page' do
   it 'displays a welcome page' do
     expect(current_path).to eq(root_path)
     expect(page).to have_content("Trails N' Brews")
-    # expect(page).to have_link("Sign in/Sign up with Google")
+    expect(page).to have_content("Login")
   end
   
   describe 'navigation bar' do
