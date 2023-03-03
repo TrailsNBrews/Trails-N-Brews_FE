@@ -3,7 +3,7 @@
     <h1>Completed Trails</h1>
     <% if current_user%>
       <% @trails.each do |trail| %>
-        <% link_to trail.name, trail_path(trail.id) %>
+        <%= link_to trail[:name], trail_path(trail[:trail_id]) %><br>
       <% end %>
     <% end %>
   </div>
@@ -11,7 +11,7 @@
     <h1>Breweries Visited</h1>
       <% if current_user %>
       <% @breweries.each do |brewery| %>
-        <% link_to brewery.name, brewery_path(brewery.id) %>
+        <%= link_to brewery[:name], brewery_path(brewery[:brewery_id]) %><br>
       <% end %>
     <% end %>
   </div>

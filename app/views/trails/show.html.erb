@@ -22,7 +22,12 @@
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
         src=<%="https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_API_KEY']}&q=#{@trail.latitude},#{@trail.longitude}" %>>
-      </iframe>    
+      </iframe>
+      <%if current_user %>
+        <h3><%= button_to "Add to Accomplishments", user_accomplishments_path, params: { user_id: current_user.id, trail: { id: @trail.id, name: @trail.name } }, method: :post, disabled: @favorite  %></h3>
+      <% end %>
+      <h3>More info about <%= @trail.name %> here: <%= link_to "COTREX Hiking App", "https://trails.colorado.gov/trailheads/#{@trail.name.downcase.gsub(" ", "-")}-#{@trail.co_id}" %></h3>
+    
     </div>
 
     <div class="col-sm-2 sidenav">

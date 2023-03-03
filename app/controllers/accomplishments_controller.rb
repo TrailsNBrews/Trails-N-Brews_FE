@@ -9,8 +9,22 @@ class AccomplishmentsController < ApplicationController
 
   def create
     if current_user
-      BackendService.accomplishments_trail(current_user, params[:trail]) if params[:trail]
-      BackendService.accomplishments_brewery(current_user, params[:brewery]) if params[:brewery]
+      if params[:trail]
+        response = BackendService.accomplishments_trail(params[:user_id], params[:trail][:id], params[:trail][:name])
+        if response.status == 201
+          flash.notice = "Accomplishment Added!"
+        else
+          flash.alert = "Something went wrong"
+        end
+      end
+      if params[:brewery]
+        response = BackendService.accomplishments_brewery(params[:user_id], params[:brewery][:id], params[:brewery][:name])
+        if response.status == 201
+          flash.notice = "Accomplishment Added!"
+        else
+          flash.alert = "Something went wrong"
+        end
+      end
     end
   end
 end

@@ -24,17 +24,19 @@ class BackendService
     end
   end
 
-  def self.accomplishments_trail(user, trail)
-    connection.post('/api/v1/user_accomplishments') do |req|
-      req.params[:user] = user,
-      req.params[:trail] = trail
+  def self.accomplishments_trail(user_id, trail_id, trail_name)
+    connection.post('/api/v1/user_trails') do |req|
+      req.params[:user_id] = user_id,
+      req.params[:trail_id] = trail_id,
+      req.params[:trail_name] = trail_name
     end
   end
 
-  def self.accomplishments_brewery(user, brewery)
-    connection.post('/api/v1/user_accomplishments') do |req|
-      req.params[:user] = user,
-      req.params[:trail] = brewery
+  def self.accomplishments_brewery(user_id, brewery_id, brewery_name)
+    connection.post('/api/v1/user_breweries') do |req|
+      req.params[:user_id] = user_id,
+      req.params[:brew_id] = brewery_id,
+      req.params[:brew_name] = brewery_name
     end
   end
 
