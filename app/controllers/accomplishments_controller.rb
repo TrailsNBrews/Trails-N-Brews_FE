@@ -12,6 +12,7 @@ class AccomplishmentsController < ApplicationController
       if params[:trail]
         response = BackendService.accomplishments_trail(params[:user_id], params[:trail][:id], params[:trail][:name])
         if response.status == 201
+          redirect_back(fallback_location: root_path)
           flash.notice = "Accomplishment Added!"
         else
           flash.alert = "Something went wrong"
@@ -21,6 +22,7 @@ class AccomplishmentsController < ApplicationController
         response = BackendService.accomplishments_brewery(params[:user_id], params[:brewery][:id], params[:brewery][:name])
         if response.status == 201
           flash.notice = "Accomplishment Added!"
+          redirect_back(fallback_location: root_path)
         else
           flash.alert = "Something went wrong"
         end

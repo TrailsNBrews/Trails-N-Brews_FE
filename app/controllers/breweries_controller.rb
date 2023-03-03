@@ -9,9 +9,12 @@ class BreweriesController < ApplicationController
   end
 
   def show
-    @brewery  = BreweryFacade.show_brewery("api/v1/search_breweries/#{params[:id]}")
+    @brewery = BreweryFacade.show_brewery("api/v1/search_breweries/#{params[:id]}")
     if current_user
-      if JSON.parse(BackendService.accomplishments(current_user).body, symbolize_names: true)[:data][:user][:breweries].include?(@brewery)
+      present = JSON.parse(BackendService.accomplishments(current_user).body, symbolize_names: true)[:data][:user][:breweries].find do |brewery|
+        brewery.value?(@brewery.id)
+      end
+      if present
         @favorite = true
       else
         @favorite = false

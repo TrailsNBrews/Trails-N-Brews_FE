@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
   def current_user
     unless @current_user
       user = JSON.parse(BackendService.user_create_or_find(AUTH_VAL: session[:user_email], ID: session[:user_id]).body, symbolize_names: true) if session[:user_id]
-      
-      if user && !user.include?('error')
+
+      if user && user[:data] && user[:data].first.key?(:id)
         @current_user = User.new(user[:data])
       end
     end
