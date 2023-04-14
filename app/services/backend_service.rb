@@ -1,6 +1,6 @@
 class BackendService
   def self.connection
-    Faraday.new(url: 'https://evening-caverns-30828.herokuapp.com' )
+    Faraday.new(url: 'https://trailsnbrews-be.herokuapp.com' )
     # Faraday.new(url: 'http://localhost:5000' )
   end
 
